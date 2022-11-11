@@ -142,5 +142,5 @@ AUTH_USER_MODEL = 'reviews.User'
 
 ADMIN_EMAIL = os.getenv('ADMIN_EMAIL')
 
-EMAIL_BACKEND = 'django.core.mail.backends.filebased.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent_emails')
