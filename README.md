@@ -1,6 +1,6 @@
 ## api_yamdb
 REST API для сервиса YaMDb — базы отзывов о фильмах, книгах и музыке. 
-(Совместный проект студентов Яндекс.Практикума)
+(Совместный проект студентов Яндекс.Практикума) ip проекта: 130.193.36.9:5000
 ![example workflow](https://github.com/Evi1Russian/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 
