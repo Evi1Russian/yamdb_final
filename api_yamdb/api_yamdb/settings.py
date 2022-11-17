@@ -143,4 +143,16 @@ AUTH_USER_MODEL = 'reviews.User'
 ADMIN_EMAIL = os.getenv('ADMIN_EMAIL')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+EMAIL_HOST = os.getenv('EMAIL_HOST', default='130.193.36.9'),
+EMAIL_PORT = os.getenv('EMAIL_PORT', default='25'),
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', default='email_user'),
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', default='email_password'),
+EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', default='False'),
+EMAIL_USE_SSL = os.getenv('EMAIL_USE_SSL', default='False'),
+EMAIL_TIMEOUT = os.getenv('EMAIL_TIMEOUT', default='20'),
+EMAIL_SSL_KEYFILE = os.getenv('EMAIL_SSL_KEYFILE', default='None'),
+EMAIL_SSL_CERTFILE = os.getenv('EMAIL_SSL_CERTFILE', default='None'),
+
+
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, 'sent_emails')
